@@ -12,7 +12,6 @@
 </div>
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
     <div class="w3-container w3-content w3-center w3-padding-10" style="max-width:800px" id="band">
-     <!--    <p class="w3-opacity"><i>some form</i></p> -->
 	<p class="w3-center res" style="min-height: 30px;"></p>
         <div class="w3-row w3-padding-32">
             <form class="form-horizontal">
@@ -37,20 +36,23 @@
     </div>
   <div class="w3-gray" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <p class="w3-opacity w3-center"><i>Записи</i></p><br>
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September 
-            <span class="w3-tag w3-red w3-margin-left">Sold out</span>
-        </li>
-        <li class="w3-padding">October 
-            <span class="w3-tag w3-red w3-margin-left">Sold out</span>
-        </li>
-      </ul>
+      <table class="table">
+  <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Текст</th>
+      <th>Дата</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>    
     </div>
   </div>
 </div>
 <footer>
 </footer>
-<script src="main.js?v=1.001"></script>
+<script src="main.js?v=1.002"></script>
+<!-- <script src="user.js?v=1.003"></script> -->
 </body>
 </html>

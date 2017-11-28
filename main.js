@@ -24,4 +24,15 @@ $(document).ready(function () {
         });
         event.preventDefault();
     });
+    $.ajax({
+        type: 'GET',
+        url: 'getPosts.php',
+        dataType: 'json',
+        success: function (data) {
+            for (i = 0; i < 6; i++) {
+                // $(".w3-ul").append('<li><span class="w3-margin-right">' + data[i].name + '</span><span class="w3-margin-left">' + data[i].body + '</span></li>');
+                $("tbody").append('<tr><td>' + data[i].name + '</td><td>' + data[i].body + '</td><td>' + data[i].dtime + '</td></tr>');
+            }
+        }
+    });
 });

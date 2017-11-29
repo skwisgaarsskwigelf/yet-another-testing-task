@@ -1,0 +1,14 @@
+#redex { 
+	resize: none; 
+}
+.control-label { 
+	margin-bottom: 10px !important;
+}
+
+#btnSubmit {
+	margin-top:15px;
+}
+
+#tour .w3-container {
+	max-width:800px
+}

@@ -24,6 +24,8 @@ $(document).ready(function () {
                 text: document.querySelector("textarea[id=redex]").value
             },
             postData: function () {
+                document.querySelector("input[id=inputName]").value = '';
+                document.querySelector("textarea[id=redex]").value = '';
                 $.ajax({
                     type: 'POST',
                     url: 'controller.php',

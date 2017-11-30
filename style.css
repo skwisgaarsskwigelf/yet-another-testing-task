@@ -2,7 +2,7 @@
 	resize: none; 
 }
 .control-label { 
-	margin-bottom: 10px !important;
+	margin-bottom: 15px !important;
 }
 
 #btnSubmit {
@@ -11,4 +11,12 @@
 
 #tour .w3-container {
 	max-width:800px
+}
+
+th:nth-child(2), td:nth-child(2){
+	text-align: center !important;
+} 
+
+th:nth-child(3), td:nth-child(3) {
+	text-align: right !important;
 }

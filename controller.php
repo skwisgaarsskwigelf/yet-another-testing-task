@@ -6,7 +6,6 @@
  * Time: 12:28
  */
 date_default_timezone_set("Europe/Moscow");
-error_reporting(E_ALL);
 require_once __DIR__ . "/conn_db.php";
 
 $data_sent = array();
@@ -33,21 +32,8 @@ class GuestBook
             $insert->bindValue(':data_name', $array["data_name"], PDO::PARAM_STR);
             $insert->bindValue(':data_body', $array["data_body"], PDO::PARAM_STR);
             $insert->execute();
-           // $this->get_posts();
         } catch (PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
         }
     }
-
-    /*public function get_posts()
-    {
-        try {
-            $get_posts = $this->conn->prepare("SELECT dtime, name, body FROM guest_book ORDER BY id DESC LIMIT 5");
-            $get_posts->execute();
-            $posts = $get_posts->fetchAll(\PDO::FETCH_ASSOC);
-            echo json_encode($posts);
-        } catch (PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
-        }
-    }*/
 }

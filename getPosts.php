@@ -1,6 +1,5 @@
 <?php
 date_default_timezone_set("Europe/Moscow");
-error_reporting(E_ALL);
 require_once __DIR__ . "/conn_db.php";
 
 class getPosts
